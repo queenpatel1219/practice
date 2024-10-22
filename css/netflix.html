@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            /* text-align: left; */
+        }
+        .first{
+            background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../../../HTML_CSS/Images/netflix\ bg.jpg);
+            height: 600px;
+            width: 100%;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo{
+            /* height: 120px;
+            width: 300px; */
+            padding-left: 18%;
+        }
+        .section{
+            color: white;
+            background-color: black;
+            height: 40px;
+            width: 120px;
+            text-align: center;
+            border-radius: 7px;
+            font-weight: bold;
+            font-size: 15px;
+
+            /* margin-left: 550px; */
+            
+        }
+        .btn{
+            height: 40px;
+            width: 80px;
+            background-color: red;
+            color: white;
+            border-radius: 7px;
+            font-weight: bold;
+            font-size: 15px;
+            /* margin-left: 30px; */
+           
+        }
+
+        .btngrup{
+            display:flex ;
+            padding-right: 10%;
+            gap: 8%;
+        }
+
+        .text{
+            color: white;
+            text-align: center ;
+            margin-top: 10%;
+            font-size: 25px;
+            border: none;
+        }
+        .text h1,p{
+            padding-top: 20px;
+        }
+        .ser{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .search{
+            padding: 15px 15% 15px 5px;
+            background-color:  rgba(0, 0, 0, 0.4);
+            border-radius: 7px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        .btn1{
+            color: white;
+            /* height: 50px; */
+            background-color: red;
+            font-size: 20px;
+            border: none;
+            border-radius: 7px;
+            font-weight: bold;
+            padding: 1.4%;
+            margin: 0 10px ;
+
+        }
+        
+        .second{
+            /* height: 400px;
+            width: 100%; */
+            background-color: black;
+            font-size: 25px;
+            color: white;
+            border-top: 7px solid rgb(57, 57, 57);
+            display: flex;
+            padding: 7%;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .img{
+            background-image: url(../../../HTML_CSS/Images/phn.jpg);
+            height: 250px;
+            width: 400px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .img2{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            border: 3px solid rgb(55, 53, 53);
+            border-radius: 7px;
+            position: absolute;
+            top: 170px;
+            left: 70px;
+            background-color: black;
+            padding: 8px;
+        }
+        .img2 h5{
+            width: 80px;
+            text-align: left;
+        }
+
+
+        .Download{
+            padding-top: 30px;
+        }
+
+
+        .question{
+            padding: 30px;
+            background-color: rgb(49, 47, 47);
+            margin: 10px;
+            text-align: left;
+            /* padding-right: 20%; */
+        }
+
+        .three{
+            display: flex; 
+            font-size: 18px; 
+            /* margin: 10px;  */
+            text-align: left;
+            
+        }
+
+
+        .section1{
+            color: white;
+            background-color: black;
+            height: 40px;
+            width: 120px;
+            /* text-align: center; */
+            border-radius: 7px;
+            font-weight: bold;
+            font-size: 15px;
+            margin-left: 5%;
+        }
+        li{
+            list-style: none; 
+            margin-bottom: 10px;
+        }
+        .quest{
+            display: block;
+
+        }
+        .quest h1{
+            text-align: center;
+        }
+        .pregra{
+            font-size: 25px;
+             margin-top: 2%; 
+             margin-bottom: 3%; 
+             text-align: center;
+        }
+        @media(max-width:600px){
+            .logo{
+                padding-left: 5%;
+                width: 55%;
+            }
+           .text{
+            font-size: 20px;
+           }
+           .second{
+            display: block;
+            text-align: center;
+           }
+           .btn1{
+            margin-top: 5%;
+           }
+           
+        }
+
+        @media(max-width:830px){
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+        <div class="nav">
+            <div ><img class="logo" src="../../../HTML_CSS/Images/netflix logo1.png" alt="" width="40%"></div>
+            <div class="btngrup">
+        <div>
+            <select class="section" > 
+                <option value="English"> English</option>
+                <option value="Hindi"> Hindi</option>
+            </select>
+        </div>
+        <div>
+            <button class="btn">Sign In</button>
+        </div>
+        </div>
+        </div>
+
+
+        <div class="text">
+            <h1>Unlimited movies,TV shows and more</h1> 
+            <p>Watch anywhere. Cancle anytime.</p>
+            <p>Ready to watch? Enter Your email to create or restart your membership.</p> <br>
+
+            <div class="ser">
+                <input class="search" type="text" placeholder="Enter address">
+                <button class="btn1">Get started ></button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="second">
+
+        <div >
+        
+        <h1>Enjoy on your TV</h1> 
+        <p>Watch on smart TVs, PlayStation, Xbox, <br>Chromocast, Applle TV, Blu-ray players and more.</p>
+        
+        </div>
+        
+        <div><img src="../../../HTML_CSS/Images/tv.png" height="300px">
+            
+        </div>
+        </div>
+
+
+        <div class="second">
+        <div>
+            <div class="img">
+                <div class="img2" >
+                    <div>
+                    <img src="../../../HTML_CSS/Images/netflix 2.png" height="60px" >
+                </div>
+                <div>
+                    <h5 style="font-size: 18px;">Stranger Things</h5> 
+                    <p style="color: blue; font-size: 18px;">Downloding...</p>
+                    
+                    
+                </div>
+                <div>
+                    <img src="../../../HTML_CSS/Images/downloding.gif" height=" 60px">
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div>    
+        <h1 class="Download">Download your shows to watch offline</h1> <br>
+        <p>Save your favourites easily and always have<br>something to watch</p>
+        </div>
+        </div> 
+    </div>
+
+
+    <div class="second">
+
+        <div >
+        
+        <h1>Watch everywhere</h1> <br>
+        <p>Stream Unlimited movies and TV shows on<br>your phone, tablet, laptop, and TV.</p>
+        
+        </div>
+        
+        <div><img src="../../../HTML_CSS/Images/tv 2.png" height="300px"></div>
+        </div>
+
+
+
+        <div class="second">
+
+            <div>
+                <img src="../../../HTML_CSS/Images/child.png" height="300px">
+            </div>
+            <div >
+            <h1>Create profiles for <br>kids</h1> <br>
+            <p>Send children on adventures with their<br>favourite characters in a space made just for <br>them--free with your membership</p>
+            </div>
+            </div>
+    
+        <div class="second quest">
+            <div><h1> Frequently Asked Questions </h1> 
+            <div>
+                <div class="question">
+                    <p>What is Netflix?</p>
+                </div>
+                <div class="question">
+                    <p>How much does Netflix cost?</p>
+                </div>
+                <div class="question">
+                    <p>Where can I watch?</p>
+                </div>
+                <div class="question">
+                    <p>How do I cancel?</p>
+                </div>
+                <div class="question">
+                    <p>What can I watch on Netflix?</p>
+                </div>
+                <div class="question">
+                    <p>Is Netflix good for kids?</p>
+                </div>
+            </div>
+            <div>
+                <p class="pregra">Ready to watch? Enter your email to create or restart your membership. </p>
+                <div class="ser">
+                    <input class="search" type="text" placeholder="Enter address">
+                    <button class="btn1">Get started ></button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+
+        <div class="second" style="display: block;">
+            <p style="font-size: 15px; margin-left: 5%;">Questions? Call <u> 000-800-919-1694</u></p>
+            <div class="three">
+                <ul style="margin: 5%; margin-left: 5%">
+                    <li><u>FAQ</u></li>
+                    <li><u>investor Relations</u></li>
+                    <li><u>Privacy</u></li>
+                    <li><u>Speed Test</u></li>
+                </ul>
+                <ul style="margin: 5%">
+                    <li><u>Help Center</u></li>
+                    <li ><u>Jobs</u></li>
+                    <li><u>Cookie Preferences</u></li>
+                    <li><u>Legal Notices</u></li>
+                </ul>
+                <ul style="margin: 5%;">
+                    <li><u>Acount</u></li>
+                    <li><u>Ways to Watch</u></li>
+                    <li><u>Corporate information</u></li>
+                    <li><u>Only on Netflix </u></li>
+                </ul>
+                <ul style="margin: 5%">
+                    <li><u>Media center</u></li>
+                    <li><u>Terms of Use</u></li>
+                    <li><u>Contact Us</u></li>
+                </ul>
+            </div>
+            <div style="text-align: left;">
+                <select class="section1" > 
+                    <option value="English"> English</option>
+                    <option value="Hindi"> Hindi</option>
+                </select>
+                <p style="font-size: 15px; margin-left: 5%; margin-top: 10px;">Netflix india</p>
+            </div>
+        </div>
+</body>
+</html>

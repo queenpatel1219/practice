@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(238,228,205);
+
+        }
+        .nav-1{
+            display: flex;
+            background-color: rgb(3,26,44);
+            justify-content: space-around;
+            border-radius: 20px;
+            padding: 7px;
+            margin: 40px;
+            margin-top: 50px;
+        }
+        .nav-0{
+            color: white;
+            font-size: 25px;
+            background-color: rgb(3,26,44);
+        }
+        .nav-2{
+            display: flex;
+            justify-content: space-around;
+            color: white;
+            /* background-color: rgb(3,26,44); */
+            
+        }
+        .nav-3{
+            display: flex;
+            color: white;
+            background-color: rgb(3,26,44);
+            gap: 50px;
+            list-style: none;
+        }
+        .nav-4{
+            color: rgb(33,186,156);
+            background-color: rgb(3,26,44);
+        }
+        .nav-5{
+            width: 350px;
+            margin-left: 40px;
+        }
+        .p-1{
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .p-2{
+            font-size: 20px;
+            font-weight: bold;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+       
+        
+        .nav-6{
+            display: flex;
+            padding-left: 30px;
+            padding-top: 10px;
+        }
+        .b-1{
+            background-color: orangered;
+            padding:5px 25px;
+            border-radius: 20px;
+            border: none;
+            color: white;
+            /* padding-left: 20px; */
+        }
+        .p-4{
+            font-weight: bold;
+            padding-top: 10px;
+            padding-left: 30px;
+        }
+        
+        
+        .nav-7{
+            background-color: white;
+            /* width: 480px; */
+            border-radius: 20px;
+            padding: 20px 10px;
+            margin-top: 120px;
+            margin-left: 30px;
+            margin-bottom: 80px;
+            margin-right: 30px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .p-5{
+            border: 1px solid;
+            border-radius: 10px;
+            padding: 15px 20px;
+            background-color: rgb(238,228,205);
+        }
+        .p-6{
+            border: 1px solid;
+            border-radius: 10px;
+            padding: 15px 20px;
+            background-color: rgb(33,186,156);
+            margin-top: 12px;
+        }
+        .div-1{
+            text-align: center;
+        }
+        .p-7{
+            color: orangered;
+            font-size: 20px;
+        }
+        .p-8{
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .p-9{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .p-10{
+            font-size: 12px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+        .div-2{
+            width: 180px;
+            text-align: center;
+            /* border: 2px solid; */
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .div-3{
+            display: flex;
+            justify-content: space-around;
+            padding-top: 35px;
+        }
+        .img-1{
+            padding-top: 150px;
+            padding-left: 30px;
+            padding-right: 30px;
+            /* background-color: red; */
+        }
+       
+        .div-4{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 100px;
+        }
+        .div-5{
+            padding-top: 100px;
+            text-align: center;
+        }
+        .b-2{
+            background-color: rgb(33,186,156);
+            padding:5px 25px;
+            border-radius: 20px;
+            border: none;
+            color: white;
+        }
+        .p-11{
+            color: rgb(33,186,156);
+            font-weight: bold;
+            font-size: 23px;
+        }
+        .p-12{
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .div-6{
+            display: flex;
+            padding-top: 80px;
+            justify-content: space-between;
+            padding: 100px 50px 50px 100px;
+
+        }
+        .p-13{
+            color: orangered;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .p-14{
+            font-size: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .div-7{
+            width: 350px;
+            padding-top: 160px;
+        }
+        .p-15{
+            font-weight: bold;
+            padding-bottom: 20px;
+        }
+        .div-8{
+            margin-right: 50px;
+        }
+        .div-9{
+            width: 500px;
+        }
+        .p-16{
+            font-size: bold;
+            width: 350px;
+            padding-bottom: 20px;
+        }
+        .div-10{
+            display: flex;
+            padding-top: 80px;
+            justify-content: space-between;
+            /* padding: 80px 50px 50px 100px; */
+            padding: 20px;
+            background-color: white;
+            border-radius: 30px;
+            margin: 30px;
+        }
+        .div-11{
+            width: 350px;
+            padding-top: 100px;
+            padding-left: 30px;
+        }
+        .div-12{
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .div-13{
+            display: flex;
+            gap: 20px;
+            border-radius: 20px;
+            /* justify-content: space-between; */
+            background-color: white;
+            padding: 20px;
+        }
+        .p-16{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .p-17{
+            width: 300px;
+        }
+        .div-14{
+            display: flex;
+            flex-wrap: wrap;
+            /* padding-top: 30px; */
+            gap: 20px;
+            justify-content: space-around;
+        }
+        .img-3{
+            padding-top: 10px;
+        }
+        .div-15{
+            display: flex;
+            gap: 20px;
+            border-radius: 20px;
+            /* justify-content: space-between; */
+            background-color: white;
+            padding: 20px;
+            width: 500px;
+            justify-content: center;
+            /* padding-left: 200px; */
+        }
+        .div-16{
+            color: orangered;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .div-17{
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .b-3{
+            background-color: rgb(33,186,156);
+            border-radius: 20px;
+            border: none;
+            padding: 10px;
+        }
+        .div-18{
+            display: flex;
+            background-color: orangered;
+            justify-content: space-between;
+        }
+        .div-19{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .div-20{
+            padding-top: 50px;
+            text-align: center;
+        }
+        .inp-1{
+            background-color: rgb(209, 194, 163);
+            padding: 15px 300px 15px 20px;
+            border-radius: 30px;
+            border-color: white;
+            margin-top: 20px;
+            /* color: black; */
+        }
+        .inp-2{
+            background-color: rgb(209, 194, 163);
+            padding: 15px 300px 15px 20px;
+            border-radius: 30px;
+            border-color: white;
+            margin-top: 10px;
+            /* color: black; */
+        }
+        .inp-3{
+            background-color: rgb(209, 194, 163);
+            padding: 15px 300px 100px 20px;
+            border-radius: 30px;
+            border-color: white;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            /* color: black; */
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div>
+       
+        <div class="nav-1">
+            <div class="nav-0">Your Logo</div>
+            <div class="nav-2">
+                <ul class="nav-3">
+                    <li style="background-color:rgb(3,26,44);">Home</li>
+                    <li style="background-color:rgb(3,26,44);">Menu</li>
+                    <li style="background-color:rgb(3,26,44);">About Us</li>
+                    <li style="background-color:rgb(3,26,44);">Contact</li>
+                </ul>
+            </div>
+            <div class="nav-4">Sign up</div>
+        </div>
+        <div class="nav-5">
+            <p class="p-1">Eat, drink and Enjoy.</p>
+            <p class="p-2">Your Restaurant is Waiting For You.</p>
+            <p class="p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut.</p>
+        </div>
+        <div class="nav-6">
+            <button class="b-1">Explore</button>
+            <p class="p-4">See Menu</p>
+        </div>
+
+
+        
+        <div class="nav-7">
+            
+            <div>
+                <p>Date  <i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                <p class="p-5">01/01/2022</p>
+            </div>
+            <div>
+                <p>Time <i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                <!-- <input type="time"> -->
+                <p class="p-5">06:30 pm</p>
+            </div>
+            <div>
+                <p>Mail <i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                <!-- <input type="mail"> -->
+                <p class="p-5">andrea@gmail.com</p>
+            </div>
+            <div>
+                <button class="p-6">Cheek Aviabillity</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div>
+        <div class="div-1">
+            <p class="p-7">Delicious</p>
+            <p class="p-8">Food Categories</p>
+        </div>
+        <div class="div-3">
+            <div class="div-2">
+                <img src="../../../HTML_CSS/Images/Dish.png" width="100px" alt="">
+                <p class="p-9">Meat</p>
+                <p class="p-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae est veniam sunt incidunt doloribus, </p>
+                <button class="b-1">Read More</button>
+            </div>
+            <div class="div-2">
+                <img src="../../../HTML_CSS/Images/Dish.png" width="100px" alt="">
+                <p class="p-9">Meat</p>
+                <p class="p-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae est veniam sunt incidunt doloribus, </p>
+                <button class="b-1">Read More</button>
+            </div>
+            <div class="div-2">
+                <img src="../../../HTML_CSS/Images/Dish.png" width="100px" alt="">
+                <p class="p-9">Meat</p>
+                <p class="p-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae est veniam sunt incidunt doloribus, </p>
+                <button class="b-1">Read More</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <div>
+            <div class="div-4">
+            <div>
+            <img class="img-2" src="../../../HTML_CSS/Images/Table 3.png" alt="">
+            </div>
+            <div class="div-5">
+            <p class="p-11">COVID - 19 Protocol</p>
+            <p class="p-12">We care about you</p>
+            <button class="b-2">Read more</button>
+            </div>
+            <div>
+            <img src="../../../HTML_CSS/Images/Table 3.png" alt="">
+            </div>
+            </div>
+
+
+            <img class="img-1" src="../../../HTML_CSS/Images/Table 2.png" width="100%" alt="">
+        </div>
+    </div>
+
+
+
+    <div class="div-6">
+        <div class="div-7">
+            <p class="p-13">Story</p>
+            <p class="p-14">Our Restaurant</p>
+            <p class="p-15" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati eos dolorum impedit, delectus explicabo cumque alias quidem eaque odio accusantium, pariatur enim aspernatur tempore et nemo! Sequi, aspernatur quam?</p>
+            <button class="b-1">Read more</button>
+        </div>
+        <div ><img class="div-8" src="../../../HTML_CSS/Images/psd321.png" alt="" width="500"></div>
+    </div>
+
+
+
+    <div class="div-6">
+        <div ><img src="../../../HTML_CSS/Images/fish.png" alt="" width="500"></div>
+        <div class="div-9">
+            <p class="p-13">Ingredients</p>
+            <p class="p-14">Fresh and healthy Ingredients</p>
+            <p class="p-16" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati eos dolorum impedit, delectus explicabo cumque alias quidem eaque odio accusantium, pariatur enim aspernatur tempore et nemo! Sequi, aspernatur quam?</p>
+            <button class="b-1">Read more</button>
+        </div>
+    </div>
+
+
+
+    <div class="div-10">
+        <div class="div-11">
+            <p class="p-13">Words from</p>
+            <p class="p-14">The Chef</p>
+            <p class="p-15" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati eos dolorum impedit, delectus explicabo cumque alias quidem eaque odio accusantium, pariatur enim aspernatur tempore et nemo! Sequi, aspernatur quam?</p>
+            <button class="b-1">Read more</button>
+        </div>
+        <div ><img class="div-8" src="../../../HTML_CSS/Images/psd123.png" alt="" width="500"></div>
+    </div>
+
+
+
+    <div>
+        <div class="div-12">
+            <p class="p-13">What our</p>
+            <p class="p-14">Customers Say</p>
+        </div>
+
+        <div class="div-14">
+            <div class="div-13">
+                <div>
+                    <img src="../../../HTML_CSS/Images/Customer.png" width="80px" alt="">
+                </div>
+                <div>
+                    <p class="p-16">Jhon Smith</p>
+                    <p class="p-17">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo corporis animi exercitationem quas, quidem illum. </p>
+                    <img class="img-3" src="../../../HTML_CSS/Images/Star 5.png" alt="">
+                </div>
+            </div>
+
+            <div class="div-13">
+                <div>
+                    <img src="../../../HTML_CSS/Images/Customer.png" width="80px" alt="">
+                </div>
+                <div>
+                    <p class="p-16">Jhon Smith</p>
+                    <p class="p-17">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo corporis animi exercitationem quas, quidem illum. </p>
+                    <img class="img-3" src="../../../HTML_CSS/Images/Star 5.png" alt="">
+                </div>
+            </div>
+            <div class="div-13">
+                <div>
+                    <img src="../../../HTML_CSS/Images/Customer.png" width="80px" alt="">
+                </div>
+                <div>
+                    <p class="p-16">Jhon Smith</p>
+                    <p class="p-17">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo corporis animi exercitationem quas, quidem illum. </p>
+                    <img class="img-3" src="../../../HTML_CSS/Images/Star 5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <div class="div-20">
+            <div>
+                <p class="div-16">Subscirbe</p>
+                <p class="div-17">To Our Newsletter</p>
+            </div>
+            <div>
+                <input class="inp-1" type="text" placeholder="NAME">
+            </div>
+            <div>
+                <input class="inp-2" type="text" placeholder="EMAIL">
+            </div>
+            <div>
+                <input class="inp-3" type="text" placeholder="MESSAGE">
+            </div>
+            <button class="b-3">SEND MESSAGE</button>
+        </div>
+    </div>
+
+
+    <div class="div-18">
+        <div class="div-19">
+            <div>
+                <p>About</p>
+                <p>History</p>
+                <p>Our Team</p>
+                <p>Mission Statement</p>
+                <p>Term & Condition</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div>
+                <p>What we do</p>
+                <p>News and stories</p>
+                <p>Publication</p>
+                <p>Take action</p>
+                <p>Recomendation</p>
+                <p>Help</p>
+            </div>
+        </div>
+        <div>
+            <p>Sign Up To Receive Our Newsletter</p>
+            <input type="text">
+            <p>Follow us!</p>
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        </div>
+    </div>
+</body>
+</html>

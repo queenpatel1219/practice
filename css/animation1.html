@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100%;
+            background: conic-gradient(lightcoral,lightgreen);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .round{
+            height: 330px;
+            width: 280px;
+            transition: 10s;
+            margin: auto;
+            margin-top: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+        }
+        .round::before{
+            content: "";
+            height: 600px;
+            width: 600px;
+            background: conic-gradient(red ,black,blue,black);
+            position: absolute;
+            animation: round1 5s linear infinite;
+
+        }
+        .round::after{
+            content: " ";
+            height: 320px;
+            width: 270px;
+            background: white;
+            position: absolute;
+        }
+        @keyframes round1 {
+            50% {
+                transform: rotate(-360deg);
+            }
+            50%{
+                transform: rotate(500deg);
+            }
+        }
+
+
+        .shine{
+            height: 50px;
+            width: 130px;
+            background-color: aqua;
+            margin: auto;
+            margin-top: 40px;
+            border-radius: 50px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 50px;
+            color: white;
+        }
+
+        .shine1{
+            height:70px ;
+            width: 150px;
+            box-shadow: 10px 10px 15px white;
+            transform: rotate(-70deg);
+            position: absolute;
+            animation: queen 1s linear infinite;
+        }
+
+        @keyframes queen {
+            from{bottom: 80%;
+                right: 70%;}
+            to{
+                bottom: -30%;
+                right: -30%; 
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="round"></div>
+    <div class="shine">
+        start
+        <div class="shine1"></div>
+    </div>
+</body>
+</html>

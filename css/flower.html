@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOWER SHOP</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .bg-1{
+            background-image:  url(../../../HTML_CSS/Images/flower.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            padding-bottom: 70px;
+            padding-top: 30px;
+
+        }
+
+        .bg-2{
+           /* background-image: url(../../../HTML_CSS/Images/leaf\ leaf.png); */
+           background-repeat: no-repeat;
+           background-size: 100% 100%;
+          
+        }
+        .navbar{
+            background-color: #333333;
+            padding-left: 50px;
+            display: flex;
+            align-items: center;
+            border-radius: 36px;
+      
+
+        }
+        .ul1{
+            /* width: 1220px; */
+            height: 60px;
+            /* background-color: red; */
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        
+            
+        }
+        li{
+            /* font-size: 15px; */
+            color: #ffffff;
+            /* font-weight: 500; */
+            font-family: "Montserrat";
+            text-align: center;
+            
+        }
+
+        .div-2{
+            padding-left: 80px;
+            padding-top: 60px;
+        }
+
+        h1{
+            font-size: 60px;
+            color: #333333;
+            width: 300px;
+        }
+        p{
+            padding-top: 10px;
+   
+        }
+
+        .p-1{
+            width: 320px;
+            font-size: 20px;
+            /* background-color: brown; */
+        }
+        .btn-1{
+            color: aliceblue;
+            background-color: rgb(248,144,158);
+            border: none;
+            border-radius: 25px;
+            padding: 10px 25px;
+            margin-top: 25px;
+            font-size: 20px;
+        }
+        .btn-2{
+            border: none;
+            background: none;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+        .p-2{
+            margin-left: 85%;
+            width: 60px;
+        }
+
+        .bg-3{
+            background-color: rgb(248, 103, 127);
+            font-size: 30px;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .bg-4{
+            text-align: center;
+
+        }
+
+        .bg-5{
+            background-color: rgb(251, 209, 203);
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        .btn-3{
+            background-color: rgb(161, 172, 100);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin: 15px 0;
+
+        }
+
+        .img-1{
+            transform: translate(-5% , -25%)
+        }
+        .img-2{
+            transform: translate(0% , -25%)
+        }
+        h3{
+            margin: 10px 0;
+        }
+
+        .bg-6{
+            display: flex;
+            /* justify-content: space-between; */
+            justify-content: space-around;
+            margin-top: 80px;
+        }
+
+        
+
+        .div-3-1-1{
+             background-image: url(../../../HTML_CSS/Images/flawergirl.png);
+             background-repeat: no-repeat;
+             background-size: 500px;
+             background-position: center;
+             height: 400px;
+             width: 350px;
+             border-radius: 40px;
+        }
+        .div-3{
+            background-color: rgb(251, 209, 203);
+            background-image: url(../../../HTML_CSS/Images/flowerpic.png);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+       
+
+        .div-3-1{
+            width: 100%;
+            text-align: center;
+            padding: 70px;
+           
+
+        }
+        .div-3-2{
+            width: 100%;
+            padding-right: 20%;
+            
+        }
+
+        .div-3-1-2{
+            /* background-image: url(../../../HTML_CSS/Images/flowerpic.png); */
+            
+            background-repeat: no-repeat;
+            /* background-size: 500px; */
+            background-position: center;
+            height: 600px;
+            width: 400px;
+            border-radius: 40px;
+        }
+
+        .div-3-1-3{
+            background-image: url(../../../HTML_CSS/Images/flowergirl2.png);
+            background-repeat: no-repeat;
+            background-size: 500px;
+            background-position: center;
+            height: 400px;
+            width: 350px;
+            border-radius: 40px;
+        }
+
+        .div-4{
+            background-color: rgb(251, 209, 203);
+            display: block;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+        .div-3-3{
+            width: 100%;
+            padding-right: 20%;
+            text-align: center;
+            
+            
+        }
+        .div-3-1-4{
+            background-image: url(../../../HTML_CSS/Images/flowergirl3.png);
+            background-repeat: no-repeat;
+            background-size: 700px;
+            background-position: center;
+            height: 300px;
+            width: 450px;
+            border-radius: 40px;
+            
+        }
+
+        .newsletter{
+            width: 100%;
+            background: url(../../../HTML_CSS/Images/flowerpic2.png) no-repeat center/cover;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            padding-block: 100px;
+        }
+        .newsphoto{
+            width: 40%;
+            
+        }
+        .newspara{
+            width: 60%;
+            /* padding-top: 100px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            gap: 20px;
+            /* background-color: aquamarine; */
+        }
+        .newspara h2{
+            width: 350px;
+            font-size: 35px;
+            text-align: center;
+            /* background-color: coral; */
+        }
+        #firstname1{
+            width: 85%;
+            /* padding-block: 15px; */
+            padding: 15px 0px 15px 15px;
+        }
+        #email1{
+            width: 85%;
+            /* padding-block: 15px; */
+            padding:15px  0px 15px 15px;
+        }
+        #message1{
+            width: 85%;
+            /* padding-block: 32px; */
+            padding: 15px 0px 60px 15px;
+            text-align: start;
+        }
+        .newspara button{
+            width: 150px;
+            border-radius: 30px;
+            padding: 5px;
+            font-size: 13px;
+            background-color: rgb(53, 226, 53);
+        }
+        
+        .last div{
+            background-color: #333333;
+            text-align: center;
+            /* display: flex; */
+            
+        }
+        h2{
+            color: white;
+        }
+       
+    </style>
+</head>
+<body>
+   <div class="bg-1">
+    <div class="bg-2">
+        <div style="padding:  0 30px;">
+            <div class="navbar">
+            
+            <img  src="../../../HTML_CSS/Images/Place Your Logo Here (Double Click to Edit) (1).png" alt="" >
+            <ul class="ul1">
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>BOUQUETS</li>
+                <li>BLOG</li>
+                <li>CONTACT</li>
+                <li>SIGN IN</li>
+            </ul>
+            </div>
+        </div>
+        <div class="div-2">
+            <h1>FLOWER SHOP</h1>
+            <p><img src="../../../HTML_CSS/Images/font.png" alt="" height="50px"></p>
+            <p class="p-1">lorem ipsum dolor sit amet, consecte-tur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+            <div>
+                <button class="btn-1">purchase</button>
+                <button class="btn-2">Read more</button>
+            </div>
+        </div>
+     
+        <p class="p-2">Name of bouquet</p>
+        </div>
+
+   </div>
+
+
+   <div class="bg-3">
+        <p style="font-size: 40px;">Gat a discount on your</p>
+        <p>firs purchase</p>
+   </div>
+
+
+
+   <div>
+        <div class="bg-4">
+        <h2>our products</h2>
+        <p>lorem ipsum dolor sit amet, consectetur adipisic- <br>ing elit, sed do eiusmod tempor incididunt ut.</p>
+        </div>
+        <div class="bg-6">
+            <div>
+                <div class="bg-5"><img class="img-1" src="../../../HTML_CSS/Images/flower2 (2).png" alt="" height="180px"></div>
+                <div>
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit <br> amet, adipisicing elit.</p>
+                    <button class="btn-3">Read more</button>
+                </div>
+            </div>
+       
+            <div>
+                <div class="bg-5"><img class="img-1" src="../../../HTML_CSS/Images/flower2.png" alt="" height="180px"></div>
+                <div>
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit <br> amet, adipisicing elit.</p>
+                    <button class="btn-3">Read more</button>
+                </div>
+            </div>
+       
+            <div>
+                <div class="bg-5"><img class="img-2" src="../../../HTML_CSS/Images/flower2 (1).png" alt="" height="140px"></div>
+                <div>
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit <br> amet, adipisicing elit.</p>
+                    <button class="btn-3">Read more</button>
+                </div>
+            </div>
+        </div>
+   </div>
+</div>
+
+
+<div class="div-3" style="background-image: none;">
+    <div class="div-3-1">
+       <div class="div-3-1-1"></div>
+    </div>
+    <div class="div-3-2" >
+        <h2>About us</h2>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolores culpa, magni et sed nihil ex accusamus ut delectus temporibus velit quo molestias, blanditiis sapiente excepturi, rem libero minima sequi?</p>
+        <button class="btn-3" style="background-color: black; color: aliceblue;">Read more</button>
+    </div>
+</div>
+
+
+<div class="div-3" style="background-color: white;">
+    <div class="div-3-2" >
+        <h2>About us</h2>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolores culpa, magni et sed nihil ex accusamus ut delectus temporibus velit quo molestias, blanditiis sapiente excepturi, rem libero minima sequi?</p>
+        <button class="btn-3" style="background-color: black; color: aliceblue;">Read more</button>
+    </div>
+    <div class="div-3-1">
+        <div class="div-3-1-2"></div>
+     </div>
+</div>
+
+
+
+
+<div class="div-3" style="background-image: none;">
+    <div class="div-3-1">
+       <div class="div-3-1-3"></div>
+    </div>
+    <div class="div-3-2" >
+        <h2>About us</h2>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolores culpa, magni et sed nihil ex accusamus ut delectus temporibus velit quo molestias, blanditiis sapiente excepturi, rem libero minima sequi?</p>
+        <button class="btn-3" style="background-color: black; color: aliceblue;">Read more</button>
+    </div>
+</div>
+
+
+
+<div class="div-4">
+   
+    <div class="div-3-3" >
+        <h2>LOREM IPSUM</h2>
+        <p >Lorem ipsum dolor sit amet, consectetur adipisic <br>ing elit, sed do eiusmod tempor incididunt ut.</p>
+    </div>
+    <div class="div-3-1">
+        <div class="div-3-1-4"></div>
+     </div>
+</div>
+
+
+<div class="div-3" style="background-color: white;">
+    <div class="div-3-2" >
+        <h2>About us</h2>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolores culpa, magni et sed nihil ex accusamus ut delectus temporibus velit quo molestias, blanditiis sapiente excepturi, rem libero minima sequi?</p>
+        <button class="btn-3" style="background-color: black; color: aliceblue;">Read more</button>
+    </div>
+    <div class="div-3-1">
+        <div class="div-3-1-2"></div>
+     </div>
+</div>
+
+
+<div class="newsletter">
+    <div class="newsphoto">
+        <img src="female main.png" alt="">
+    </div>
+    <div class="newspara">
+        <h2 style="color: black;">SUBSCRIBE TO <br>OUR NEWS LETTER</h2>
+        <input type="text" name="firstname" id="firstname1" placeholder="Your Name">
+        <input type="email" name="email" id="email1" placeholder="Enter Mail">
+        <input type="text" name="message" id="message1" placeholder="Message">
+        <button>SEND MESSAGE</button>
+    </div>
+
+</div>
+
+
+
+<div class="last div">
+    <div>
+        <h2>About</h2>
+        <ul>
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Mission Statement</li>
+            <li>Teams&Condition</li>
+            <li>Privacy Policy</li>
+        </ul>
+    </div>
+    <div>
+        <h2>What we do</h2>
+        <ul>
+            <li>News and stories</li>
+             <li>Publications</li>
+             <li>Take action</li>
+             <li>Recomendations</li>
+             <li>Help</li>
+        </ul>
+    </div>
+    <div>
+        <div>
+        <h2>Your company</h2>
+        <ul>
+            <li>Halimun street 25</li>
+            <li>Jakarta,city 1234</li>
+            <li>www.yourflowersite.com</li>
+        </ul>
+    </div>
+    </div>
+</div>
+
+</body>
+</html>

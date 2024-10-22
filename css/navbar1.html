@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *
+        {
+            /* border: 1px solid black; */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .navbar
+        {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 100px;
+            word-spacing: 35px;
+            font-size: 20px;
+            font-weight: bolder;
+            border: 1px solid;
+        }
+
+        li
+        {
+            display: inline;
+        }
+        .bars
+        {
+            display: none;
+            cursor: pointer;
+        }
+        .bars:hover ul
+        {
+            display: block;
+        }
+    @media (max-width:500px) 
+    {
+        ul
+        {
+            display: none;
+            list-style: none;
+            width: 100%;
+        }
+        .navbar
+        {
+            position: relative;
+            padding: 20px 60px;
+        }
+        .class
+        {
+            display: block;
+        }
+        .bars
+        {
+            display: block;
+        }
+        li
+        {
+            display: block;
+            border: 1px solid;
+            padding-left: 25px;
+        }
+        .menu
+        {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            text-align: center;
+        }
+    }
+    </style>
+</head>
+<body>
+        <div class="navbar">
+            <div class="logo"></div>
+                <ul id="menu" class="menu" >
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>SERVICES</li>
+                    <li>PAGE</li>
+                </ul>
+            <div class="bars" id="bar" onclick="submenu()"><i class="fa fa-bars"  ></i></div>   
+        </div>
+        <script >
+            ul = document.getElementById('menu');
+            bar = document.getElementById('bar');
+
+
+
+            function submenu() 
+            {
+                if(ul.style.display == "none")
+                {
+                    ul.style.display = "block";
+                }
+                else
+                {
+                    ul.style.display = "none";
+                }
+            }
+    
+        </script>
+    </body>
+</html>

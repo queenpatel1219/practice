@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: crimson;
+            animation-name: animation-1;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            /* animation-delay:5s; */
+        }
+        @keyframes animation-1{
+           0%{
+               /* margin-left: 0px; */
+              background-color: aqua;
+           }
+            25%{
+                margin-top: 0px;
+               margin-left: 500px;
+               border-radius: 200px;  
+               background-color: crimson;
+            }
+            50%{
+                margin-left: 500px;
+                margin-top: 300px;
+                border-radius: 0px;
+                background-color: blue;
+            }
+            75%{
+                margin-left: 0px;
+                margin-top: 300px;
+                border-radius: 200px;
+                background-color: blueviolet;
+            }
+            100%{
+                margin-top: 0px;
+                margin-left: 0px;
+            }
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media qurey</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            /* height: 300px;
+            width: 300px;
+            border: 3px solid black; */
+            /* text-align: center; */
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .div{
+          height: 300px;
+          width: 300px;
+          border: 3px solid black;
+            /* text-align: center; */
+            /* display: flex; */
+        }
+        
+
+       
+        body {
+            background-color: crimson;
+            color: aliceblue;
+        }
+
+      
+
+      /* Max Media Query  */
+
+      /* 1400px */
+
+      @media (max-width: 1400px) {
+        body {
+          background-color: rgb(0, 255, 132);
+          color: black;
+        }
+
+        
+      }
+
+      /* 1200px  */
+
+      @media (max-width: 1200px) {
+        body {
+          background-color: rgb(36, 0, 128);
+          color: aliceblue;
+        }
+
+      }
+
+      /* 992px  */
+
+      @media (max-width: 992px) {
+        body {
+          background-color: rgb(0, 109, 128);
+          color: aliceblue;
+        }
+
+       
+      }
+
+      /* 768px  */
+
+      @media (max-width: 768px) {
+        body {
+          background-color: rgb(216, 21, 21);
+          color: aliceblue;
+        }
+
+      
+      }
+
+      /* 576 px  */
+
+      @media (max-width: 576px) {
+        body {
+          background-color: rgb(128, 113, 0);
+          color: rgb(1, 11, 19);
+        }
+
+        h1::before {
+          content: "576px ";
+        }
+      }
+    </style>
+</head>
+<body>
+  <div class="box">
+    <div class="div">1</div>
+    <div class="div">2</div>
+    <div class="div">3</div>
+    <div class="div">4</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Sibling Selector</title>
+    <style>
+        .parent+p+p{
+            background-color: crimson;
+            color: aliceblue;
+        }
+        h1+p{
+            background-color: teal;
+            color: khaki;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quam!</p>
+    <h1>Adjacent Sibling Selector (+)</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quam!</p>
+    <div class="parent">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+</body>
+</html>

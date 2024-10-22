@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin Padding Box</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      .margin {
+        background-color: teal;
+        color: khaki;
+        border: 1px solid black;
+        margin: 100px; /* All Four Side */
+        margin: 100px 200px; /* Top-Bottom = 100px, Right-left = 200px  */
+        margin: 100px 200px 300px; /* Top = 100px, Right-left = 200px, Bottom = 300px  */
+        margin: 100px 200px 300px 400px; /* Top = 100px, Right = 200px, Bottom = 300px, left = 400px  */
+      }
+      .padding {
+        background-color: teal;
+        color: khaki;
+        border: 1px solid black;
+        padding: 100px; /* All Four Side */
+        padding: 100px 200px; /* Top-Bottom = 100px, Right-left = 200px  */
+        padding: 100px 200px 300px; /* Top = 100px, Right-left = 200px, Bottom = 300px  */
+        padding: 100px 200px 300px 400px; /* Top = 100px, Right = 200px, Bottom = 300px, left = 400px  */
+      }
+      div[class*="box"]{
+        width: 100px;
+        height: 100px;
+        border: 10px solid black;
+        margin: 0 auto;
+        background-color: crimson;
+        color: aliceblue;
+        padding: 20px;
+      }
+      .content-box{
+        box-sizing: content-box;
+        /* Total width = width = 100px + padding = (20*2)= 40px + border = (10*2)=20px => 160px */
+        /* Total height = width = 100px + padding = (20*2)= 40px + border = (10*2)=20px => 160px */
+        /* => Real box = 160px  */
+      }
+      .border-box{
+        box-sizing: border-box;
+         /* Total width = width = 100px - padding = (20*2)= 40px - border = (10*2)=20px => 40px */
+        /* Total height = width = 100px - padding = (20*2)= 40px - border = (10*2)=20px => 40px */
+        /* => Real box = 100px  */
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Margin Padding Box-Sizing</h1>
+    <hr>
+    <div class="margin">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nam nobis
+      commodi vero veniam ad beatae, magnam et facere eos debitis a dolorem
+      consectetur excepturi, cum eius reiciendis sit voluptas.
+    </div>
+    <hr />
+    <div class="padding">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nam nobis
+      commodi vero veniam ad beatae, magnam et facere eos debitis a dolorem
+      consectetur excepturi, cum eius reiciendis sit voluptas.
+    </div>
+    <hr>
+    <div class="content-box">content-box</div>
+    <hr>
+    <div class="border-box">border-box</div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </body>
+</html>
